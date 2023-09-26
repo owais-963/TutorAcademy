@@ -189,8 +189,13 @@ def update(request):
 
         obj.save()
 
-        mesg = (f"Name: {obj.name} \nPhone: {obj.tel} \nEmail: {obj.email} \nNIC#: {obj.nic} \nAddress: {obj.add} \nAbout: {obj.about} \nEducation: {obj.edu}, {obj.inst} \nExperience: {obj.exp} /"
-                f"Image {obj.obj.pic.url}")
+        try:
+
+            mesg = (f"Name: {obj.name} \nPhone: {obj.phone} \nEmail: {obj.email} \nNIC#: {obj.nic} \nAddress: {obj.add} \nAbout: {obj.about} \nEducation: {obj.qua}, {obj.inst} \nExperience: {obj.exp} /"
+                f"Image {obj.pic.url}")
+        except Exception as e:
+            print(e)
+            mesg=f"ERROR! {e}"
 
         sub = "Tutor Profile Update"
 
