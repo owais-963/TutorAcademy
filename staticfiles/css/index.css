@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    scroll-behavior: smooth !important;
+}
+
+body{
+    color: #231f20;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+ }
+header{
+    /* box-shadow: 10px 10px 3px #ffffff ; */
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    position: fixed !important;
+    top: 0;
+    height: 100px;
+    
+}
+header>nav>div>a>img{
+    width: 35%;
+    height: auto;
+}
+header>nav>div>div>ul{
+    line-height: 20px;
+    display: block;
+}
+header>nav>div>div>ul>li{
+    font-weight: 700;
+    padding: 20px;
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: #f89824;
+}
+a:hover{
+    color: #231f20;
+}
+
+.slogan{
+    vertical-align: middle;
+    color: #005e7f;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 18% 0 5% 20%;
+    padding: 2%;
+}
+.banner{
+    max-width: 100%;
+}
+
+.banner-img{
+    margin: 2% 0 -2% 20%;
+    width: 38%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .banner-img {
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+
+  .slogan{
+    margin: 0;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1680px) {
+    .banner-img{
+        width: 52%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner-img{
+        width: 85%;
+        height: auto;
+    }
+}
+#banner{
+    background-color: #f89824;
+    width: 100%;
+    max-width: 100%;
+}
+.r-tutor{
+    margin: 1% 0 5% 35%;
+    padding: 1.5% 3.5% 1.5% 3.5%;
+    border-radius:25px;
+    color: white;
+    background-color: #231f20;
+    border: #f89824 1px solid;
+}
+.r-tutor:hover{
+    background-color: #ffffff;
+    color: #231f20;
+    font-weight: 700;
+    border: #231f20 2px solid;
+    font-weight:bold;
+}
+#home>h1{
+font-size: 3.5vw;
+font-weight: 600;
+text-align: center;
+margin: 6% 0 4% 0;
+}
+#home>div{
+    width: 100%;
+}
+.circle-img{
+    display: flex !important;
+    margin: 0 10% 2% 0%;
+    justify-content:right;
+
+}
+.imgdiv{
+    display: flex;
+    width: 30%;
+
+}
+
+
+.feature-box{
+    width: 70%;
+}
+.features{
+    width: 40%;
+    /* border: #005e7f solid 2px; */
+    border-radius: 30px;
+    margin: 6% 1% 2% 6%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 4px 4px #005e7f;
+    padding: 0 4% 4% 4%;
+}
+.features>h4{
+    background-color: #005e7f;
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    padding: 4%;
+    padding-bottom: 2%;
+    height: fit-content;
+    font-weight: 550;
+    text-transform: uppercase;
+    margin-top: -6%;
+    
+}
+
+.tution>h1{
+    font-weight: 700;
+    text-align: center ;
+    margin: 8% 0 3% 0;
+    font-size:3.5vw;
+}
+.Quran>img{
+    width: 15% !important;
+    height: auto;
+    padding: 0;
+    box-shadow: 0 0 4px 5px #f89824;
+    margin: 0;
+    border-radius:3px;
+}
+/* .tution>div>div>h1{
+    text-align: center ;
+    margin: 0.5% 0 2% 0;
+    border-radius: 20px;
+    font-weight: 600;
+    
+} */
+.group-row>img{
+    width: 60% !important;
+    height: auto;
+    padding: 0;
+    box-shadow: 0 0 4px 5px #f89824;
+    margin: 1% 0 1.7% 0;
+    border-radius:3px;
+}
+.sub-title{
+    text-align: center ;
+    margin: 1% 0 4% 0;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.tution div{
+    margin: 0 0 2% 0 !important;
+}
+
+.hire-tutor{
+    max-width: 100%;
+    width: 100%;
+}
+.hire-tutor>h1{
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.steps{
+    /* width: fit-content; */
+    background-color: #f89824;
+    padding: 1%;
+    margin: 3%;
+    border-radius: 15px;
+}
+.steps>h3{
+    text-align: center;
+    padding: 0.6% 0 2% 0;
+    color: #eee;
+    font-weight: bold;
+    font-size:x-large;
+    text-transform: uppercase;
+}
+.steps>h1{
+    text-align: center;
+    padding: 0.6% 0 2% 0;
+    color: #eee;
+    font-weight: bold;
+    font-size:xx-large;
+    text-transform: uppercase;
+}
+
+.steps>p{
+    color:#eee;
+    text-align: center;
+    font-weight: 500;
+    font-size: larger;
+}
+
+#aboutus{
+    margin: 2%;
+}
+
+#aboutus>h1{
+    text-align: center;
+    color: #231f20;
+    font-weight: 800;
+    font-size: 3.5vw;
+  
+}
+#aboutus>div{
+    /* border: #005e7f 4px solid; */
+    border-radius: 20px;
+    width: 100% !important;
+    padding: 2%;
+    font-size:1vw;
+    font-weight: 500;
+    text-align: center;
+    word-spacing: 4px;
+    line-height: 200%;
+}
+
+#contactus>h1{
+    text-align: center;
+    color: #231f20;
+    font-weight: 800;
+    font-size: 3.5vw;
+  
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #231f20;
+    font-size: 20px;
+}
+
+input[type="name"], [type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="file"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for checkboxes */
+.checkbox-container {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+input[type="submit"] {
+    width: 20%;
+    background-color: white;
+    color: rgb(24, 24, 24);
+    font-size: 24px;
+    padding: 14px ;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #231f20;
+    color: white;
+}
+
+footer{
+    margin: 5% 0 0 0;
+    padding: 1%;
+    background-color: #231f20;
+}
+footer>div>span{
+    text-align: center;
+    font-weight: 600;
+    color: white;
+
+}
+
+
+@media (max-width: 992px){
+    .feature-box{
+        display: flex !important;
+        justify-content: center;
+        width: fit-content !important;
+    }
+    .feature-box>div{
+        display: flex !important;
+        justify-content: center;
+        width: fit-content !important;
+        margin: 5% 0 5% 0;
+    }
+    .features{
+        width: 60% !important;
+    }
+    .features>h4{
+        margin-top: -6% !important; 
+    }
+    .Quran>img{
+        width: 20% !important;
+    }
+    .tution>h1{
+        font-size: 6vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .circle-img {
+        margin: 0 !important;
+        justify-content: center !important;
+    }
+    #home>h1{
+        font-size: 8vw;
+    }
+    .features{
+        width:fit-content !important;
+        margin:0 !important;
+    }
+    .Quran>img{
+        width: 32% !important;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .Quran>img{
+        width: 60% !important;
+    }
+    .tution>h1{
+        font-size: 8vw;
+    }
+}
+@media (max-width: 1100px) {
+    .circle-img {
+        margin: 0 !important;
+        justify-content: center !important;
+    }
+   .imgdiv{
+        width: fit-content !important;
+        justify-content: center !important;
+    }
+    .feature-box{
+        width: 100% !important;
+    }
+
+    .features{
+        width: 50% !important;
+        margin: 4% 4% 4% 7% !important;
+        width: fit-content !important;
+    }
+    .features>h4{
+        margin-top: -10% !important;
+        width: fit-content;
+    }
+
+    #home>h1{
+        font-size: 6vw;
+    }
+
+}
+
+
+@media (max-width: 620px){
+    .features{
+        /* max-width: 100% !important; */
+        margin: 10% 0 5% 0  !important;
+        width: fit-content !important;
+    }
+    .feature-box{
+        width: 100% !important;
+        /* display: flex !important;
+        justify-content: center; */
+    }
+    .features>h4{
+        width: fit-content !important;
+        margin-top:-15% !important;
+        padding: 2% 1.5% 2% 1.5%!important;
+    }
+}

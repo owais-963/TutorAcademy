@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script src="https://kit.fontawesome.com/a474eeeb3e.js" crossorigin="anonymous"></script>
+    <title>IGH Tutors</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    
+    <header style="position: fixed;">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://ightutors.com\"><img src="{% static 'images/LOGO TUTORS.png' %}" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li>
+                    <a href="{% url 'home' %}">
+                    Home
+                    </a>
+                </li>
+
+<!--                <li>-->
+<!--                    <a href="{% url 'home' %}#aboutus">-->
+<!--                    About Us-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li>-->
+<!--                    <a href="{% url 'home' %}#contactus">-->
+<!--                    Contact Us-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li>-->
+<!--                    <a href="{% url 'joinUs' %}">-->
+<!--                    Join Us-->
+<!--                    </a>-->
+<!--                </li>-->
+
+                <li>
+                    <a href="{% url 'login' %}">
+                    login
+                    </a>
+                </li>
+
+              </ul>
+              </div>
+          </div>
+        </nav>
+    </header>
+
+
+<section id="contactus">
+    <h1 style="text-align: center; margin-top: 100px;">
+        Tutor Recruitment Form
+    </h1>
+    <div class=" d-flex justify-content-center">
+    <form action="{% url 'joinUs' %}" enctype="multipart/form-data"
+    method="POST" class="row g-3">
+        {% csrf_token %}
+        <div class="col-6">
+        <label for="name">Name:</label>
+        <input type="name" id="name" name="name" required><br>
+    </div>
+    <div class="col-6">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        </div>
+        <div class="col-6">
+            <label for="tel">Phone no:</label>
+            <input type="tel" id="tel" name="tel" required><br>
+            </div>  
+        <div class="col-6">
+            <label for="nic">NIC no:</label>
+            <input type="number" id="nic" name="nic" required><br>
+        </div>
+
+            <div class="col-6">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br>
+            </div>
+
+            <div class="col-6">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+            </div>
+
+        
+            <div class="col-6">
+                <label for="edu">Education:</label>
+                <input type="text" id="edu" name="edu" required><br>
+            </div>
+
+        
+            <div class="col-6">
+                <label for="inst">Institute:</label>
+                <input type="text" id="inst" name="inst" required><br>
+            </div>
+
+        
+            <div class="col-6">
+                <label for="exp">Experince:</label>
+                <input type="text" id="exp" name="exp" required><br>
+            </div>
+
+            <div class="col-6">
+                <label for="about">About:</label>
+                <input type="text" id="about" name="about"><br>
+            </div>
+
+
+            <div class="col-6">
+                <label for="sub">Subjects you can teach:</label>
+                <input type="text" id="sub" name="sub" required><br>
+            </div>
+
+            <div class="col-6">
+                <label for="ach">Achievements:</label>
+                <input type="text" id="ach" name="ach"><br>
+            </div>
+
+
+
+
+
+        
+            
+            <label for="pic">Upload Picture:</label>
+            <input type="file" id="pic" name="pic" accept=".png,.jpeg,.JPG"><br><br>
+
+<!--            <h3>Subjects you can teach:</h3><br>-->
+<!--            <label class="checkbox-container">-->
+<!--                <span class="checkbox-label">Math-->
+<!--                    <input type="checkbox" id="math" name="math" value="Math">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </span>-->
+<!--            </label>-->
+<!--            -->
+<!--            <label class="checkbox-container">-->
+<!--                <span class="checkbox-label">Science-->
+<!--                    <input type="checkbox" id="sci" name="sci" value="Science">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </span>-->
+<!--            </label>-->
+<!--            <label class="checkbox-container">-->
+<!--                <span class="checkbox-label">Geography-->
+<!--                    <input type="checkbox" id="geo" name="geo" value="Geography">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </span>-->
+<!--            </label>-->
+<!--            <label class="checkbox-container">-->
+<!--                <span class="checkbox-label">History-->
+<!--                    <input type="checkbox" id="hist" name="hist" value="History">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </span>-->
+<!--            </label>-->
+<!--            <label class="checkbox-container">-->
+<!--                <span class="checkbox-label">Business-->
+<!--                    <input type="checkbox" id="busn" name="busn" value="Business">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </span>-->
+<!--            </label> -->
+<!--            <label class="checkbox-container">-->
+<!--                <span class="checkbox-label">Arts-->
+<!--                    <input type="checkbox" id="arts" name="arts" value="Arts">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </span>-->
+<!--            </label>-->
+<!--            -->
+<!--            -->
+            <!-- Repeat similar structure for other subjects -->
+            
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+</section>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>

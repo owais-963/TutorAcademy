@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    scroll-behavior: smooth !important;
+}
+
+body{
+    color: #231f20;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+ }
+ header{
+    /* box-shadow: 10px 10px 3px #ffffff ; */
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    top: 0;
+    height: 100px;
+    
+}
+header>nav>div>a>img{
+    width: 35%;
+    height: auto;
+}
+header>nav>div>div>ul{
+    line-height: 20px;
+    display: block;
+}
+header>nav>div>div>ul>li{
+    font-weight: 700;
+    padding: 20px;
+    display: inline;
+}
+header>nav>div>div>ul>li>a{
+    text-decoration: none;
+    color: #f89824;
+}
+header>nav>div>div>ul>li>a:hover{
+    color: #231f20;
+}
+
+.sec{
+    margin-top: 100px;
+
+}
+
+table{
+    width: 100%;
+    margin-top: 50px;
+    padding: 5%;
+}
+thead{
+    background-color: white;
+
+   
+}
+th{
+    padding: 1% 2% 1% 2% ;
+    margin: 5px;
+    width: fit-content;
+    /* border: 4px solid #f89824; */
+    font-weight: 600;
+}
+
+tbody{
+    background-color: #666161;
+}
+
+td{
+    padding: 1% 2% 1% 2% ;
+    margin: 5px;
+    width: fit-content;
+    color: white;
+    /* border: 4px solid #f89824; */
+}
+tr{
+    border: 4px solid #f89824;
+    font-weight: 500;
+}
+td>a{
+    text-decoration: none;
+    color: white;
+}
+
+td>span>i{
+    cursor: pointer;
+}
+
+.profile-image{
+    width: 190px;
+    height: 190px;
+    border: 5px solid #f89824;
+    border-radius: 50%;
+    background-image: url('/public/images/profile.jpg');
+    background-attachment: scroll;
+    background-size:cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+.news-feed-section {
+    background-color: white;
+    padding: 20px;
+    width: 65%;
+    margin-left: 10%;
+    margin-top: 110px;
+    /* border: 2px solid black; */
+} 
+
+.news-feed {
+    background-color: white;
+    height: fit-content;
+    padding: 30px;
+    width:fit-content;
+    /* border: 3px solid #f89824; */
+    /* border-radius: 25px; */
+    box-shadow: 5px 5px #f5e8e8;
+    margin: 25px;
+}
+
+.news-feed a{
+    padding: 10px 25px 10px 25px;
+    /* border-radius: 15px; */
+    background-color: #eee;
+    border: 0 solid white;
+    color: #005e7f;
+    font-weight: bold;
+    text-decoration: none;
+}

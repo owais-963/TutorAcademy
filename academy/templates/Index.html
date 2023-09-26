@@ -1,0 +1,429 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/a474eeeb3e.js" crossorigin="anonymous"></script>
+    <title>IGH Tutors</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    
+    <header style="position: fixed;">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://ightutors.com\"><img src="{% static 'images/LOGO TUTORS.png' %}" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li>
+                    <a href="{% url 'home' %}">
+                    Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'home' %}#aboutus">
+                    About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'home' %}#contactus">
+                    Contact Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'joinUs' %}">
+                    Join Us
+                    </a>
+                </li>
+
+                {% if user_logged %}
+
+                <li>
+                    <a href="{% url 'profile' %}">
+                    profile
+                    </a>
+                </li>
+                    {% else %}
+                    <li>
+                    <a href="{% url 'login' %}">
+                    login
+                    </a>
+                </li>
+
+                {% endif %}
+
+              </ul>
+              </div>
+          </div>
+        </nav>
+    </header>
+
+
+    <!-- navbarend -->
+
+
+    <!-- banner -->
+
+        <section id="banner">
+            <div class="banner row">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <h1 class="slogan container">
+                        Are you stuck in studies? <br> looking for a tutor?
+                    </h1>
+                    <button class="r-tutor">
+                        Request a tutor
+                    </button>
+
+
+                    <!-- bootstrap  model form 
+                    
+
+                        FORM
+                    
+                    -->
+
+
+
+                </div>
+                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <img class="banner-img" src="{% static 'images/no-revisions-UhpAf0ySwuk-unsplash (1).jpg' %}" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <!-- banner end -->
+
+        <!-- home -->
+        
+        <section id="home">
+
+                <h1>
+                    Why tutor from us?
+                </h1>
+
+                <div class="row" style="width: 100%; display:flex; justify-content:center">
+
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 feature-box">
+
+                        <div class="row" style="width:100%; max-width:100%;">
+
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 features">
+
+                                <h4>
+                                    Varified and Qualified <br> teachers
+                                </h4>
+
+                            </div>    
+                             <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 features">
+
+                                <h4>
+                                    Varified and Qualified <br> teachers 
+                                </h4>
+
+                            </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 features">
+
+                                <h4>
+                                    Varified and Qualified <br> teachers 
+                                </h4>
+
+                            </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 features">
+
+                                <h4>
+                                    Varified and Qualified <br> teachers 
+                                </h4>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 imgdiv">
+
+                        <div class="circle-img">
+
+                            <img src="{% static 'images/tutorbg1.png' %}" alt="tutor">
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                <!-- subjects -->
+
+                <div class="tution">
+                    <h1>
+                        Tutions we offer
+                    </h1>
+                    <div class="row" style="width:100%; display:flex; justify-content:center">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div class="Quran" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/Quran.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title" style="margin-bottom: 1%;"> Quran </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/math.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Maths </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/physics.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Physics </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/chem.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Chemistry </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/bio.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Biology </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/computrer.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Computer Science </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/english.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> English </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/test.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Admission Tests </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/Arts.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Arts </h1>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/books.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> O/A Levels </h1>
+                        </div>
+                                    
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/Result.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Matric / Inter </h1>
+                        </div>
+                                    
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/Bachelors.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Bachelors </h1>
+                        </div>
+                                    
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="group-row" style="display: flex; justify-content:center">
+                            <img src="{% static 'images/programing.jpg' %}" alt="">
+                            </div>
+                            <h1 class="sub-title"> Programing </h1>
+                        </div>                     
+                        
+                    </div>
+                </div>
+
+                <!-- end subjects -->
+
+                <!-- steps of hiring -->
+
+                <div class="hire-tutor">
+
+                    <h1>
+                        Get tutor in three easy steps
+                    </h1>
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 steps ">
+                        <h1>
+                            STEP 1
+                        </h1>
+                        <h3>
+                            Tell us your requirment
+                        </h3>
+                        <p>
+                            Our representative would listen to you properly and note all your requirements. What you want to learn, what time you want, Tutor’s gender, your budget etc.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 steps ">
+                        <h1>
+                            STEP 2
+                        </h1>
+                        <h3>
+                            set a meeting or <br> demo class with tutor
+                        </h3>
+                        <p>
+                            We filter our database of tutors according to your requirements and provide your contact details to them. You may schedule your meeting time with tutors according to your convenience.
+                        </p>
+                        
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 steps">
+                        <h1>
+                            Step 3
+                        </h1>
+                        <h3>
+                            Make payment and start learning
+                        </h3>
+                        <p>
+                            You need to make payment in advance to Karachi Tutors Academy Once you make payment to tutors directly, now IGH Tutors does not take guarantee of the tutor and shall not be responsible.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                </div>
+                <!-- end steps of hiring -->
+
+        </section>
+
+        <!-- end home -->
+
+        <!-- about us -->
+
+        <section id="aboutus">
+            <h1>
+                About us
+            </h1>
+
+            <div class="d-flex justify-content-center container">
+
+                <p>
+                    IGH tutors founded in the year 2013 under the supervision of Sir Muhammad Irfan together with the team of individuals from the respected and reputed schools for the purpose of helping students in their day to day work and enhance their skills to the maximum level.
+As at today, we are a team of tutors which includes males, females, experience, and youth. The experience tutors have been associated with top-level schools therefore carrying good experience with themselves and the youth have the updated knowledge of today's requirement of students so choosing us for your kids will not be disappointing for the parents at all as we are full of dedication, devotion, talent and experience.
+Our Mission and Vision:
+IGH’S mission is to promote education to almost every part of the world with the greatest level of satisfaction and results.
+To allow students to study and pursue their academic goals without having to be physical present in a campus.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- end about us -->
+
+<!-- services -->
+        <!-- <section id="services">
+
+            <div class="row">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 steps">
+
+
+
+                </div>
+            </div>
+
+        </section> -->
+<!-- end services -->
+
+
+<!-- contactus -->
+
+        <section id="contactus">
+            <h1 style="text-align: center; margin-top: 100px;">
+                Contact Us
+            </h1>
+            <div class=" d-flex justify-content-center">
+            <form action="{% url 'contactUs' %}" method="POST" class="row g-3">
+                {% csrf_token %}
+                <div class="col-6">
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name" required><br>
+            </div>
+            <div class="col-6">
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class" required><br>
+            </div>
+            <div class="col-6">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                </div>
+                <div class="col-6">
+                    <label for="tel">Phone no:</label>
+                    <input type="tel" id="tel" name="tel" required><br>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required><br>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="fee">Fees:</label>
+                        <input type="number" id="fee" name="fee" required><br>
+                    </div>
+
+                <div class="col-12">
+                <label for="message">Additional notes:</label>
+                <textarea id="message" name="message" required></textarea><br>
+            </div>
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+
+        </section>
+
+        <!-- end contactus -->
+
+        <!-- start footer -->
+
+        <footer>
+            <div class="d-flex justify-content-around">
+                <span style="background-color: white;">
+                    <img src="{% static 'images/LOGO TUTORS.png' %}" alt="" style="height: auto; width:100px;">
+                </span>
+                <span>
+                <i class="fa-solid fa-envelope"></i>
+                muhammadirfan@ightutors.com
+                </span>
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+923112531232" style="color: white;"> +92 3112531232</a>
+                </span>
+                <span class="d-flex">
+                    <a href="https://www.facebook.com/owais.ali.73307" style="color: white; margin-right:10%;">
+                        <i class="fa-brands fa-facebook" style="font-size:xx-large;"></i>              </a>
+                        <a href="https://www.facebook.com/owais.ali.73307" style="color: white; margin-right:10%;">
+                            <i class="fa-brands fa-instagram" style="font-size:xx-large;"></i>              </a>
+                </span>
+            </div>
+
+        </footer>
+
+        <!-- end footer -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
